@@ -13,4 +13,5 @@ RUN pip install -U \
     unidecode \
     robotframework \
     robotframework-selenium2library \
-    robotframework-browsermobproxylibrary \
+    robotframework-appiumlibrary \
+    robotframework-browsermobproxylibrary
