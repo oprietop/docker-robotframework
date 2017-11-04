@@ -7,13 +7,15 @@ RUN apk add --update --no-cache \
     py-pip \
     tzdata
 
-RUN pip install -U \
+RUN pip --no-cache-dir install -U \
     pip \
     selenium \
     unidecode \
     requests \
     robotframework \
-    robotframework-selenium2library \
     robotframework-appiumlibrary \
     robotframework-browsermobproxylibrary \
     robotframework-requests
+
+# needed until the final SeleniumLibrary 3.0 is released
+RUN pip --no-cache-dir install --pre --upgrade robotframework-seleniumlibrary
