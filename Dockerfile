@@ -9,6 +9,7 @@ RUN apk add --update --no-cache \
 
 RUN pip --no-cache-dir install -U \
     pip \
+    six \
     selenium \
     unidecode \
     requests \
@@ -16,6 +17,3 @@ RUN pip --no-cache-dir install -U \
     robotframework-appiumlibrary \
     robotframework-browsermobproxylibrary \
     robotframework-requests
-
-# needed until the final SeleniumLibrary 3.0 is released
-RUN pip --no-cache-dir install --pre --upgrade robotframework-seleniumlibrary
