@@ -15,5 +15,6 @@ RUN pip --no-cache-dir install -U \
     requests \
     robotframework \
     robotframework-appiumlibrary \
+    robotframework-seleniumlibrary \
     robotframework-browsermobproxylibrary \
     robotframework-requests
