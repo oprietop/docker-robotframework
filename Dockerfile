@@ -1,10 +1,9 @@
-FROM openjdk:jre-alpine
+FROM python:2-alpine
 MAINTAINER Oscar Prieto <oscarmpp@gmail.com>
 
 RUN apk add --update --no-cache \
-    python \
-    python-dev \
-    py-pip \
+    imagemagick \
+    curl-dev \
     tzdata
 
 RUN pip --no-cache-dir install -U \
@@ -13,6 +12,7 @@ RUN pip --no-cache-dir install -U \
     selenium \
     unidecode \
     requests \
+    influxdb \
     robotframework \
     robotframework-appiumlibrary \
     robotframework-seleniumlibrary \
